@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        const obj=["서울","부산","진주"]
+        $(obj).each(function(i,o){
+            console.log(i+":",o); //i=index, o=object
+        });
+        console.log("== END ==")
+        // $.each($("#menu1 li"),function(i,o){
+            //     console.log(i+":",o);
+            // });
+            $.each($("#menu1 li"),function(o,a){
+                console.log(o+":",a);
+            });
+            $.each($("#menu1 li"),function(i,o){
+                console.log(i,o);
+            });
+            console.log("== END ==")
+            $.each($("#menu1 li"),function(i){
+                console.log(i,$(this));
+            });
+    });
+</script>
+<title>배열</title>
+</head>
+<body>
+    <h1></h1>
+    <ul id="menu1">
+        <li>1-1</li>
+        <li>1-2</li>
+    </ul>
+</body>
+</html>
